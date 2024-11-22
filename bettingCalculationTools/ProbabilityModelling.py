@@ -97,6 +97,6 @@ class PoissonModel(ProbabilityModel):
 
 
 
-mod = PoissonModel()
-table = mod.calculateTable()
-mod.saveTable(table, os.path.join(os.path.dirname(__file__), "../data\Table.csv"))
+#mod = PoissonModel()
+#table = mod.calculateTable()
+#mod.saveTable(table, os.path.join(os.path.dirname(__file__), "../data\Table.csv"))

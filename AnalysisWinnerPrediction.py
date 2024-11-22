@@ -9,7 +9,7 @@ import pandas as pd
 from bettingCalculationTools.DataImport import DataImporter
 from AverageCalculation import AverageCalculation
 import os
-from bettingCalculationTools.EloModel import EloRating
+from EloModel import EloRating
 from statsmodels.stats.proportion import proportion_confint
 import matplotlib.pyplot as plt 
 
@@ -126,6 +126,6 @@ def calculateAccuracyWinnerPrediction(data, excludeSeason = 'NAN'):
     plt.show()
     
 prepareData()
-calculateAccuracyWinnerPrediction(pd.read_csv(os.path.join(os.path.dirname(__file__), "data\dataWinnerPrediction.csv")), '2005/2006')
+#calculateAccuracyWinnerPrediction(pd.read_csv(os.path.join(os.path.dirname(__file__), "data\dataWinnerPrediction.csv")), '2005/2006')
 calculateAccuracyWinnerPrediction(pd.read_csv(os.path.join(os.path.dirname(__file__), "data\dataWinnerPrediction.csv")))
    
